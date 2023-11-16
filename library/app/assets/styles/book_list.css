@@ -1,0 +1,101 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+}
+
+/*** CONTENEDOR DE TEXTO ****/
+
+.text-container {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.5rem;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  width: 175px;
+}
+
+.text-container__upload-book {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 2%;
+}
+.text-container__upload-book:hover {
+  background-color: #f5903e;
+  cursor: pointer;
+}
+
+/**** COMPONENTE QUE CONTIENE LA INFORMACIÓN DE LOS LIBROS ****/
+
+.book-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 50vw;
+  max-height: 50vh;
+  overflow-y: auto;
+}
+
+.book-container__book {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  width: 150px;
+  height: 215px;
+  font-size: 1.2rem;
+  background-color: rgba(250, 235, 215, 0.721);
+  padding: 2%;
+  margin: 2%;
+  border-radius: 10px;
+}
+
+.book-container__book p {
+  margin: 5px;
+}
+
+.book-container__no-books {
+  font-size: 2rem;
+}
+
+.book-container__actions {
+  margin-top: 15px;
+}
+
+/**** OTHERS ****/
+.success {
+  color: white;
+  font-weight: 600;
+  background-color: #3fa847;
+  font-size: 1.5rem;
+  padding: 3%;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.error {
+  color: white;
+  font-weight: 600;
+  background-color: red;
+  font-size: 1.5rem;
+  padding: 3%;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

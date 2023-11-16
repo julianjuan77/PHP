@@ -1,0 +1,8 @@
+CREATE TABLE IF NOT EXISTS books (
+    code INT AUTO_INCREMENT,
+    title VARCHAR(255) NOT NULL,
+    author VARCHAR(255) NOT NULL,
+    available TINYINT NOT NULL,
+    PRIMARY KEY (code)
+)  ENGINE=INNODB;
+

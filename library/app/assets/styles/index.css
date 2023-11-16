@@ -1,0 +1,145 @@
+.main {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  padding: 0 5%;
+}
+
+/*** CONTENDOR DONDE SE ENCUENTRA EL TEXTO Y EL BANNER ***/
+
+.text-container {
+  display: flex;
+  justify-content: center;
+  text-align: start;
+  font-size: 1.5em;
+}
+
+.text-container__logo {
+  width: 175px;
+}
+
+.text-container__header h1 {
+  font-weight: 500;
+}
+
+.text-container__button {
+  background-color: transparent;
+  border: 1px solid;
+  padding: 2%;
+}
+
+.text-container__button:hover {
+  background-color: #f5903e;
+  cursor: pointer;
+}
+
+/**** CONTENEDOR DEL FORMULARIO****/
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+}
+
+.form-container__form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 80%;
+}
+
+.form-container__form label {
+  font-size: 1.5em;
+  font-weight: 400;
+}
+
+.form-container__form label p {
+  display: inline;
+  color: red;
+  font-weight: 600;
+}
+
+.form-container__text-input {
+  background-color: #eee;
+  border: none;
+  height: 70px;
+  transition: transform 300ms ease-in-out;
+  font-size: 1.3rem;
+  padding: 2%;
+}
+
+.form-container__text-input:focus {
+  outline: none;
+  transform: scale(1.05);
+}
+
+.form-container__submit {
+  border: none;
+  padding: 2%;
+  height: 70px;
+  font-size: 1.5rem;
+  transition: background-color 100ms ease-in-out;
+  background: #de955a;
+  box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0.1),
+    0px 17px 36px 0px rgba(0, 0, 0, 0.1), 0px 66px 66px 0px rgba(0, 0, 0, 0.09),
+    0px 149px 89px 0px rgba(0, 0, 0, 0.05),
+    0px 265px 106px 0px rgba(0, 0, 0, 0.01),
+    0px 414px 116px 0px rgba(0, 0, 0, 0);
+}
+
+/*** COMPONENTE DE REDES SOCIALES ***/
+
+.form-container__submit:hover {
+  cursor: pointer;
+  background-color: #f5903e;
+}
+
+.form-container__social svg {
+  fill: #919191;
+  transition: transform 100ms ease-in-out;
+}
+
+.form-container__social svg:hover {
+  transform: scale(1.1);
+  fill: #de955a;
+}
+
+/*** OTROS ***/
+
+.required-error {
+  color: red;
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin: 0;
+}
+
+.success {
+  color: white;
+  font-weight: 600;
+  background-color: #3fa847;
+  font-size: 1.5rem;
+  padding: 3%;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+.error {
+  color: white;
+  font-weight: 600;
+  background-color: red;
+  font-size: 1.5rem;
+  padding: 3%;
+  animation: fadeInUp 1s ease-in-out;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}

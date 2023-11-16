@@ -1,6 +1,6 @@
 # Sobre el proyecto 
 
-Es un proyecto muy básico que realicé para poner en práctica algunos conceptos básicos de PHP que estoy aprendiendo. La aplicación no tiene un funcionamiento útil y el diseño tampoco está pensado para ser cómodo para el usuario o bonito; además, no es responsive.
+Es un proyecto muy básico que realicé para poner en práctica algunos conceptos de PHP que estoy aprendiendo. La aplicación no tiene un funcionamiento útil y el diseño tampoco está pensado para ser cómodo para el usuario o bonito; además, no es responsive.
 
 
 

@@ -1,0 +1,75 @@
+@import url("/src/resources/utils.css");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: var(--bg-color);
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a:link,
+:visited {
+  color: none;
+}
+
+/*** HEADER ***/
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 32px;
+  color: var(--pri-color);
+  text-shadow: 2px 6px 13px rgba(126, 121, 121, 0.45);
+}
+
+.header__logo-container {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.header__logo-container svg {
+  width: 24px;
+  height: 24px;
+  fill: var(--sec-color);
+}
+
+.header__logo {
+  font-size: 64px;
+}
+
+.header__date-container {
+  position: absolute;
+  top: 100%;
+  right: 2%;
+}
+
+/*** NAVBAR ***/
+
+.navbar {
+  display: flex;
+  margin-top: 48px;
+}
+
+.navbar svg {
+  fill: var(--pri-color);
+  height: 32px;
+  width: 32px;
+  margin-right: 16px;
+}
+
+.navbar svg:hover {
+  fill: var(--pri-hover);
+}

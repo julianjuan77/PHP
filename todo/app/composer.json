@@ -1,0 +1,15 @@
+{
+    "name": "julian/notas",
+    "autoload": {
+        "psr-4": {
+            "Julian\\Notas\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "julianjuan77",
+            "email": "julianjuan77@hotmail.com"
+        }
+    ],
+    "require": {}
+}

@@ -1,0 +1,106 @@
+@import url("/src/resources/utils.css");
+
+.main {
+  flex: 1;
+}
+
+/*** NO NOTES ***/
+
+.no-notes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80%;
+}
+
+.no-notes p {
+  font-size: 2.074rem;
+  color: var(--pri-color);
+  font-weight: light;
+}
+
+/*** NOTES ***/
+.note-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 64px;
+  margin: 64px 64px;
+}
+
+.note-container__note {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: start;
+  border-radius: 8px;
+  flex-wrap: wrap;
+  position: relative;
+  width: 300px;
+  height: 189px;
+  background-color: var(--neu-color);
+  padding: 16px;
+  overflow-x: auto;
+  overflow-y: auto;
+}
+
+.note-container__note::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+.note-container__note::-webkit-scrollbar-thumb {
+  background: #ccc;
+  border-radius: 4px;
+}
+
+.note-container__note::-webkit-scrollbar-thumb:hover {
+  background: #b3b3b3;
+  box-shadow: 0 0 2px 1px rgba(0, 0, 0, 0.2);
+}
+
+.note-container__note::-webkit-scrollbar-thumb:active {
+  background-color: #999999;
+}
+
+.note-container__title {
+  width: 100%;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.note-container__content {
+  width: 100%;
+  text-align: center;
+}
+
+.note-container__actions-note {
+  background-color: var(--neu-color);
+  border-radius: 64px;
+  padding: 8px;
+  position: absolute;
+  bottom: 4px;
+}
+
+.note-container__edit {
+  fill: var(--pri-color);
+  width: 24px;
+  height: 24px;
+}
+
+.note-container__completed {
+  fill: var(--sec-color);
+  width: 24px;
+  height: 24px;
+}
+
+/*** OTHERS ***/
+a {
+  text-decoration: none;
+}
+
+a:link,
+:visited {
+  color: black;
+}
